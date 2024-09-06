@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine and Clinic Center</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        header .menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        header .appointment-btn {
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        header .appointment-btn:hover {
+            background-color: #ff6347;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+        }
+
+        .hero .hero-text {
+            max-width: 600px;
+        }
+
+        .hero .hero-text h1 {
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero .checkup-btn {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .checkup-btn:hover {
+            background-color: #7b1fa2;
+        }
+
+        .hero .doctor-image img {
+            max-width: 350px;
+            border-radius: 20px;
+        }
+
+        /* Doctor Profile Section */
+        .doctor-profile {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #fff;
+            margin: 20px auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .doctor-profile .profile-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .doctor-profile img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .doctor-profile .profile-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .doctor-profile .profile-details h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .doctor-profile .profile-details span {
+            color: #999;
+            font-size: 16px;
+        }
+
+        .doctor-profile .profile-stats {
+            text-align: center;
+        }
+
+        .doctor-profile .profile-stats strong {
+            display: block;
+            font-size: 24px;
+            color: #6a1b9a;
+        }
+
+        .doctor-profile .profile-stats span {
+            color: #999;
+            font-size: 16px;
+        }
+
+        /* Card Section */
+        .card-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .card h4 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .doctor-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .card-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Mental.me</div>
+        <nav class="menu">
+            <a href="#">Doctors</a>
+            <a href="#">Surgeon</a>
+            <a href="#">Dentist</a>
+            <a href="#">Directions</a>
+        </nav>
+        <button class="appointment-btn">Appointment</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Medicine and Clinic Center</h1>
+            <p>Center Clinic, the pioneer of medical offers, provides detailed information on healthcare and more...</p>
+            <button class="checkup-btn">Start A Checkup Now</button>
+        </div>
+        <div class="doctor-image">
+            <img src="doctor-placeholder.jpg" alt="Doctor Image">
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section class="doctor-profile">
+        <div class="profile-info">
+            <img src="doctor-avatar.jpg" alt="Doctor Profile">
+            <div class="profile-details">
+                <h3>Brian, 19 y.o. (Male)</h3>
+                <span>Heart Rate: 94.5 BPM</span>
+            </div>
+        </div>
+        <div class="profile-stats">
+            <strong>+7%</strong>
+            <span>From Last Week</span>
+        </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="card-section">
+        <div class="card">
+            <h4>Understanding Cosmetic Dentistry</h4>
+            <p>Explore cosmetic dentistry and learn how it can enhance your smile.</p>
+        </div>
+        <div class="card">
+            <h4>Medical Center Patient</h4>
+            <p>"In the realm of care, my doctor here isn't just a practitioner; they're a guardian of health."</p>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script>
+        document.querySelector('.checkup-btn').addEventListener('click', function() {
+            alert('Checkup process initiated!');
+        });
+    </script>
+</body>
+</html>
